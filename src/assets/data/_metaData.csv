@@ -1,0 +1,85 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions",Universe,"Variable List"
+"Number of students in regular programs for youth, public elementary and secondary schools, by age and sex",37100019,477-0037,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3710001901",1;2;3;5;10,"CURRENT - a cube available to the public and that is current",Annual,2002-01-01,2017-01-01,3,,
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Correction Notes","Dimension Definitions"
+1,Geography,,,
+2,Age,,,
+3,Sex,,,
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Correction Notes","Member Geo Attribute Keys","Member Definitions"
+1,Canada,[11124],1,,,,,,
+1,"Newfoundland and Labrador",[10],2,1,,,,,
+1,"Prince Edward Island",[11],3,1,,,,,
+1,"Nova Scotia",[12],4,1,,,,,
+1,"New Brunswick",[13],5,1,,,,,
+1,Quebec,[24],6,1,,,,,
+1,Ontario,[35],7,1,,7,,,
+1,Manitoba,[46],8,1,,12,,,
+1,Saskatchewan,[47],9,1,,,,,
+1,Alberta,[48],10,1,,13,,,
+1,"British Columbia",[59],11,1,,11,,,
+1,Yukon,[60],12,1,,,,,
+1,"Northwest Territories",[61],13,1,,,,,
+1,Nunavut,[62],14,1,,,,,
+2,"Total, age",,1,,,,,,
+2,"Less than 4 years",,2,1,,,,,
+2,"4 years",,3,1,,,,,
+2,"5 years",,4,1,,,,,
+2,"6 years",,5,1,,,,,
+2,"7 years",,6,1,,,,,
+2,"8 years",,7,1,,,,,
+2,"9 years",,8,1,,,,,
+2,"10 years",,9,1,,,,,
+2,"11 years",,10,1,,,,,
+2,"12 years",,11,1,,,,,
+2,"13 years",,12,1,,,,,
+2,"14 years",,13,1,,,,,
+2,"15 years",,14,1,,,,,
+2,"16 years",,15,1,,,,,
+2,"17 years",,16,1,,,,,
+2,"18 years",,17,1,,,,,
+2,"19 years",,18,1,,,,,
+2,"20 years",,19,1,,,,,
+2,"21 years and over",,20,1,,,,,
+2,"Age unknown",,21,1,,,,,
+3,"Total, sex",,1,,,,,,
+3,Males,,2,1,,,,,
+3,Females,,3,1,,,,,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period",..
+"less than the limit of detection",<LOD
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded",0s
+"data quality: excellent",A
+"data quality: very good",B
+"data quality: good",C
+"data quality: acceptable",D
+"use with caution",E
+"too unreliable to be published.",F
+"not applicable",...
+preliminary,p
+revised,r
+"suppressed to meet the confidentiality requirements of the Statistics Act",x
+terminated,t
+
+"Survey Code","Survey Name"
+5102,"Elementary-Secondary Education Survey"
+
+"Subject Code","Subject Name"
+37,"Education, training and learning"
+
+"Note ID",Note
+1,"All counts are randomly rounded to a multiple of 3 using the following procedure: counts that are already a multiple of 3 are not adjusted; counts 1 greater than a multiple of 3 are adjusted to the next lowest multiple of 3 with a probability of two-thirds and to the next highest multiple of 3 with a probability of one-third. The probabilities are reversed for counts that are 1 less than a multiple of 3."
+2,"The data are subject to revision."
+3,"Counts represent the number of students enrolled in programs at the beginning of the school year (in September or as close as possible thereafter)."
+5,"Excludes general programs for adults and vocational programs for youth and adults. The exception being Nova Scotia where vocational programs were included, starting in 2010/2011."
+7,"Due to a change in data collection methods in Ontario, data for 2006/2007 and subsequent years are not strictly comparable with data for the years prior to 2006/2007."
+10,"Totals may not add up to the sum of all categories due to rounding."
+11,"From 2010/2011 onwards, the enrolment counts for British Columbia include students in ""distributed learning"" (also referred to as ""distance learning"" or ""DL""), which offers students flexibility in how and where they access their programs. This type of access is much more common, and a much more formalized part of the elementary-secondary school system, in British Columbia than it is in the other provinces/territories."
+12,"Manitoba counts its students in Catholic schools under ""private/independent schools""."
+13,"In Alberta, data prior to 2011/2012 are not comparable with more recent data due to a change in methodology."
+
+"Dimension ID","Member ID","Attribute Key",Title,Label,"Long Label",Value
+
+

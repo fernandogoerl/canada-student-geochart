@@ -1,0 +1,39 @@
+<div data-component="students-map" *ngIf="isLoaded">
+
+    <div class="geo-chart-container" >
+        <google-chart
+            class="geo-chart"
+            [type]="defaultChartConfig.chartType"
+            [data]='defaultChartConfig.dataList'
+            [columnNames]='defaultChartConfig.columnNames'
+            [options]="defaultChartConfig.options">
+        </google-chart>
+    </div>
+    <div class="selectors-container">
+        <div class="single-selector">
+            <label for="ref_date">Date</label>
+            <select name="ref_date" id="date-selector" (change)='changeDateFilter($event)'>
+                <option *ngFor="let date of dateSelectors" value={{date}}>{{date}}</option>
+            </select>
+        </div>
+        <div class="single-selector">
+            <label for="location">Location</label>
+            <select name="location" id="location-selector" (change)='changeLocationFilter($event)'>
+                <option *ngFor="let location of locationSelectors" value={{location}}>{{location}}</option>
+            </select>
+        </div>
+        <div class="single-selector">
+            <label for="age">Age</label>
+            <select name="age" id="age-selector" (change)='changeAgeFilter($event)'>
+                <option *ngFor="let age of ageSelectors" value={{age}}>{{age}}</option>
+            </select>
+        </div>
+        <div class="single-selector">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender-selector" (change)='changeGenderFilter($event)'>
+                <option *ngFor="let gender of genderSelectors" value={{gender}}>{{gender}}</option>
+            </select>
+        </div>
+    </div>
+    <!-- <button (click)="getAgeFilters()">Send Alert</button> -->
+</div>

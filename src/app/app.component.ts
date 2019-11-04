@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'canada-student-geochart';
+  title = 'GeoChart for Students in Regular Programs in Canada';
 }
