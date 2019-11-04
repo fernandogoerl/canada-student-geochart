@@ -173,11 +173,33 @@ export class StudentsMapComponent implements OnInit {
   
   //SELECT THE COLUMNS NEEDED FOR THE GEOCHART
   dataForChart = (data) => {
-    this.defaultChartConfig.dataList = data.map(data => ([
+    let tempDatalist = data.map(data => ([
       data.GEO,
       parseInt(data.VALUE)
     ]))
+    this.fillEmptyData(tempDatalist)
+  }
+  
+  //FILL EMPTY DATA FOR PROVINCES
+  fillEmptyData = (dataList) => {
+    let completeDataList = dataList
+    if(!dataList[0].includes('Canada')) {
+
+      this.locationSelectors.map(location => {
+        let locationExists = completeDataList.find(data => {
+          
+          if(data[0] === location && location !== 'All Provinces' && location !== 'Canada') return true
+        })
+        if(!locationExists) {
+          completeDataList.push([location, 0])
+        }
+      })
+    }
+    this.defaultChartConfig.dataList = completeDataList
     this.isLoaded = true
+    console.log(this.selectedFilters)
+    console.log(this.defaultChartConfig.dataList)
+
   }
 
   
